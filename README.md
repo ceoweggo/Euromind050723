@@ -5,3 +5,5 @@
 - lora database
 - nikolay database
 - elitsa front-end
+
+# 
