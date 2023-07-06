@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es-ES">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>{{title}}</title>
+	<meta name="description" content="{{metadescription}}">
+	<meta name="keywords" content="{{keywords}}">
+	<meta name="author" content="My first application">
+	<link rel="favicon" href="{{url_for('static',filename='svg/#')}}" type="icon" sizes="16x16">
+	<link rel="icon" href="{{url_for('static',filename='svg/#')}}" type="icon" sizes="16x16">
+	<link rel="icon" href="{{url_for('static',filename='svg/#')}}" type="icon" sizes="32x32">
+	<link rel="apple-touch-icon" href="{{url_for('static',filename='svg/#')}}" type="icon">
+	<link rel="manifest" href="{{url_for('static',filename='svg/#')}}" /><!-- https://developer.mozilla.org/en-US/docs/Web/Manifest -->
+	<meta name="msapplication-TileImage" content="{{url_for('static',filename='svg/#')}}" sizes="150x150">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- ===============================================-->
+	<!--    Stylesheets-->
+	<!-- ===============================================-->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+	<!-- Main Theme Styles + Bootstrap-->
+	<link rel="stylesheet" media="screen" href="{{url_for('static', filename='css/theme.css')}}"/>
+
+	{% block css %}
+	{% endblock %}
+</head>
+
+<body class="my-background-color">
+    <header>
+        {% block header %}
+        {% endblock %}
+    </header>
+    <content>
+        {% block content %}
+        {% endblock %}
+    </content>
+    <footer>
+        {% block footer %}
+        {% endblock %}
+    </footer>
+
+    {% block scripts %}
+    {% endblock %}
+
+</body>
+
+
+</html>
