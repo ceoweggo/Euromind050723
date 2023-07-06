@@ -1,1 +1,5 @@
-# Euromind050723
+## 432mongohavata
+
+- Blago. FRONT-END
+- Yosif. BACK-END
+- Ivan. DATABASE 
