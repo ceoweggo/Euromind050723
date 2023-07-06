@@ -6,3 +6,5 @@
 - Timur Ahmed. DATABASE
 - Dimitar Dimitrov. BACK-END
 - Martin Nedev. BACK-END
+
+- Topic - Animals
