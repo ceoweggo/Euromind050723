@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>{{title}}</title>
+	<title>Best Spanish Foods</title>
 	<meta name="description" content="{{metadescription}}">
 	<meta name="keywords" content="{{keywords}}">
 	<meta name="author" content="My first application">
@@ -14,40 +14,152 @@
 	<link rel="icon" href="{{url_for('static',filename='svg/#')}}" type="icon" sizes="16x16">
 	<link rel="icon" href="{{url_for('static',filename='svg/#')}}" type="icon" sizes="32x32">
 	<link rel="apple-touch-icon" href="{{url_for('static',filename='svg/#')}}" type="icon">
-	<link rel="manifest" href="{{url_for('static',filename='svg/#')}}" /><!-- https://developer.mozilla.org/en-US/docs/Web/Manifest -->
+	<link rel="manifest" href="{{url_for('static',filename='svg/#')}}" />
 	<meta name="msapplication-TileImage" content="{{url_for('static',filename='svg/#')}}" sizes="150x150">
 	<meta name="theme-color" content="#ffffff">
 
-	<!-- ===============================================-->
-	<!--    Stylesheets-->
-	<!-- ===============================================-->
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<!-- Main Theme Styles + Bootstrap-->
 	<link rel="stylesheet" media="screen" href="{{url_for('static', filename='css/theme.css')}}"/>
 
-	{% block css %}
-	{% endblock %}
+	
+
 </head>
 
-<body class="my-background-color">
+<body>
     <header>
-        {% block header %}
-        {% endblock %}
-    </header>
-    <content>
-        {% block content %}
-        {% endblock %}
-    </content>
-    <footer>
-        {% block footer %}
-        {% endblock %}
-    </footer>
+		
+		<div class="navbar navbar-dark bg-dark shadow-sm">
+		  <div class="container py-2">
+			<a href="#" class="navbar-brand d-flex align-items-center">
+			  <strong>Team Abracadabra</strong>
+			</a>
+		  </div>
+		</div>
+	  </header>
+	  
+	  <main>
+	  
+		<section class="py-5 text-center container">
+		  <div class="row py-lg-5">
+			<div class="col-lg-6 col-md-8 mx-auto">
+			  <h1 class="fw-light">Best Spanish Foods</h1>
+			  <p class="lead text-muted">In recent years people have come to celebrate the extraordinary flavors and variety of produce the cuisine has to offer. High-profile chefs such as Ferran Adria, mastermind of the now-closed El Bulli restaurant, and the Roca brothers, founders of the El Celler de Can Roca, have brought Spain’s alta cocina international acclaim.
+				 But the heart of Spanish cooking remains in its rustic, homespun nature, a legacy of a time when hard-pressed Spaniards had to work the land for everything it would offer. These 9 dishes are essential meals when you travel to Spain.</p>
+			</div>
+		  </div>
+		</section>
+	  
+		<div class="album py-5 bg-light">
+		  <div class="container">
+	  
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+			  <div class="col my-2">
+				<div class="card shadow-sm">
+				  <img class="mx-auto" width="300" height="225" src="https://th.bing.com/th/id/OIP.9wM4vwgeMX8A_0pGp1OOlAHaEK?pid=ImgDet&rs=1" alt="">
+				  <div class="card-body">
+					<h4 class="card-text">Paella</h4>
+					<p class="card-text">Paella is a rice dish originally from the Valencian Community.The dish consists of round-grain rice, bajoqueta and tavella (varieties of green beans), rabbit, chicken, sometimes duck, and garrofó (a variety of lima or butter bean), cooked in olive oil and chicken broth. The original Paella has exactly ten ingredients and is Spain's national dish. </p>
+					
+				  </div>
+				</div>
+			  </div>
+			  <div class="col my-2">
+				<div class="card shadow-sm">
+				<img class="mx-auto" width="300" height="225" src="https://th.bing.com/th/id/OIP.oTv6BDQ9uzLOvCwelqVjcAHaE8?w=299&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+				  <div class="card-body">
+					<h4 class="card-text">Patatas Bravas</h4>
+					<p class="card-text">Patatas bravas, spicy Spanish potatoes, are simple but delicious snack. Chunks of potato are fried in extra virgin olive oil until perfectly crisp on the outside, and tender on the inside. The potatoes are then drizzled or drenched (your call) in a vibrant, perfectly smoky bravas sauce.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col my-2">
+				<div class="card shadow-sm">
+				  <img class="mx-auto" width="300" height="225" src="https://th.bing.com/th/id/OIP.NymLLu1w3wNfr9i4BnbZbwHaE8?w=272&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+				  <div class="card-body">
+					<h4 class="card-text">Tortilla de Patatas</h4>
+					<p class="card-text">The potato omelette or Spanish omelette is an omelette or omelette (that is, beaten egg , curdled with oil in the pan)  to which chopped potatoes are added.  It is one of the most well-known and emblematic dishes of Spanish cuisine , being a very popular product that can be found in almost any bar or restaurant in the country. </p>
+				  </div>
+				</div>
+			  </div>
+	  
+			  <div class="col my-2">
+				<div class="card shadow-sm">
+				  <img class="mx-auto" width="300" height="225" src="https://th.bing.com/th/id/OIP.tdvDc20eeNexf6au7swJuwHaE8?w=266&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+				  <div class="card-body">
+					<h4 class="card-text">Albondigas</h4>
+					<p class="card-text">Spanish Meatballs, or Albondigas, are traditionally served at tapas bars in Spain. Whether you serve them for an appetizer, tapas party, or dinner main dish, these small meatballs in a flavorful tomato sauce are perfect for enjoying with a glass of Spanish red wine.</p>
+					
+				  </div>
+				</div>
+			  </div>
+			  <div class="col my-2">
+				<div class="card shadow-sm">
+				  <img class="mx-auto" width="300" height="225" src="https://th.bing.com/th/id/OIP.8pXKwHvoBBEZthtGQngW9QHaJ4?w=202&h=269&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+				  <div class="card-body">
+					<h4 class="card-text">Churros</h4>
+					<p class="card-text">A churro is Spain’s answer to the donut, a crunchy, deep-fried sweet snack that resembles the horns of the churro sheep. The ideal churro has a distinct crunch when one bites into it, but the interior should have a slight softness at the center.</p>
+					
+				  </div>
+				</div>
+			  </div>
+			  <div class="col my-2">
+				<div class="card shadow-sm">
+				  <img class="mx-auto" width="300" height="225" src="https://th.bing.com/th/id/OIP.jRXngwBsfA6AblQ94YMsJQHaE5?w=255&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+				  <div class="card-body">
+					<h4 class="card-text">Croquetas</h4>
+					<p class="card-text">It consists of a portion of dough made from a thick sauce such as bechamel and a mincemeat of various ingredients, which has been coated in egg and breadcrumps , and fried in abundant oil.</p>
+					
+				  </div>
+				</div>
+			  </div>
+	  
+			  <div class="col my-2">
+				<div class="card shadow-sm">
+				  <img class="mx-auto" width="300" height="225" src="https://th.bing.com/th/id/OIP.p9CaJnnbqH0ideDcfQ7O2AHaE3?w=292&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+				  <div class="card-body">
+					<h4 class="card-text">Gazpacho</h4>
+					<p class="card-text">Gazpacho is a cold soup of Spanish cuisine, especially that of Andalusia. It is an ancient dish mentioned in Greek and Roman literature, although two of the main ingredients of the modern version, tomatoes and green peppers, were brought to Spain from the New World only in the 16th century. Spanish cookbooks classify gazpacho as a salad.</p>
+					
+				  </div>
+				</div>
+			  </div>
+			  <div class="col my-2">
+				<div class="card shadow-sm">
+				  <img class="mx-auto" width="300" height="225" src="https://th.bing.com/th/id/OIP.LFnESHX5-7BEFZ08LChO7wHaE8?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+				  <div class="card-body">
+					<h4 class="card-text">Pisto</h4>
+					<p class="card-text">Pisto (also known as pisto manchego) is a Spanish dish originally from the Region of Murcia, Castilla La Mancha and Extremadura. It is made of tomatoes, onions, eggplant or courgettes, green and red peppers, and olive oil.[1] It is usually served warm as a starter or to accompany another dish. It is often served with white rice, bread, a fried egg on top or with pieces of cured ham.</p>
+					
+				  </div>
+				</div>
+			  </div>
+			  <div class="col my-2">
+				<div class="card shadow-sm">
+				  <img class="mx-auto" width="300" height="225" src="https://th.bing.com/th/id/OIP.7bDBOS82jjI71IZFGohZcgHaHK?w=202&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+				  <div class="card-body">
+					<h4 class="card-text">Sangria</h4>
+					<p class="card-text">A punch, sangria traditionally consists of red wine and chopped fruit, often with other ingredients or spirits. Sangria is very popular among foreign tourists in Spain even if locals do not consume the beverage that much. It is commonly served in bars, restaurants, and chiringuitos and at festivities throughout Portugal and Spain.</p>
+					
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  
+	  </main>
+	  
+	  <footer class="text-muted py-5">
+		<div class="container">
+		  <p class="text-center">This is made using Bootstrap by team Abracadabra, consisting of Nikol (front-end), Duygu (back-end), Gabriela (back-end), Lora (database), Nikolay (database) and Elitsa (front-end). Thank you for viewing our project!</p>
+		 
+		</div>
+	  </footer>
 
-    {% block scripts %}
-    {% endblock %}
-
+	  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 

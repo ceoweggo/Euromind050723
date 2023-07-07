@@ -9,3 +9,4 @@ default_breadcrumb_root(public, '.')
 @register_breadcrumb(public, '.', 'Home')
 def index():
     return render_template('index.html')
+
