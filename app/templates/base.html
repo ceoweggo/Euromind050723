@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es-ES">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>{{title}}</title>
+	<meta name="description" content="{{metadescription}}">
+	<meta name="keywords" content="{{keywords}}">
+	<meta name="author" content="My first application">
+	<link rel="favicon" href="{{url_for('static',filename='svg/#')}}" type="icon" sizes="16x16">
+	<link rel="icon" href="{{url_for('static',filename='svg/#')}}" type="icon" sizes="16x16">
+	<link rel="icon" href="{{url_for('static',filename='svg/#')}}" type="icon" sizes="32x32">
+	<link rel="apple-touch-icon" href="{{url_for('static',filename='svg/#')}}" type="icon">
+	<link rel="manifest" href="{{url_for('static',filename='svg/#')}}" /><!-- https://developer.mozilla.org/en-US/docs/Web/Manifest -->
+	<meta name="msapplication-TileImage" content="{{url_for('static',filename='svg/#')}}" sizes="150x150">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- ===============================================-->
+	<!--    Stylesheets-->
+	<!-- ===============================================-->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+	<!-- Main Theme Styles + Bootstrap-->
+	<link rel="stylesheet" media="screen" href="{{url_for('static', filename='css/theme.css')}}"/>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	{% block css %}
+	{% endblock %}
+</head>
+
+<body class="my-background-color">
+    <header class="header-background-colors">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        {% block header %}
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+			  <a class="navbar-brand logo" href="#">			
+				<img src="{{url_for('static',filename='img/3.avif')}}" width="100">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<div class="btn-group">
+						<button type="button" class="btn btn-danger">Places</button>
+						<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <span class="sr-only">Places</span>
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#">Seville, Spain</a>
+						  <a class="dropdown-item" href="#">Rilla, Bulgaria</a>
+						  <a class="dropdown-item" href="#">Plovdiv, Bulgaria</a>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					  </div>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+				  </li>
+				</ul>
+				<form class="d-flex" role="search">
+				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			  </div>
+			</div>
+		  </nav>
+        {% endblock %}
+    </header>
+
+    <content>
+        {% block content %}
+        {% endblock %}
+    </content>
+
+    <footer>
+        {% block footer %}
+        {% endblock %}
+		<footer>
+			<p>Copyright © 2006 The Example Company</p>
+			<p><a href="about.html">About</a> -
+			   <a href="policy.html">Privacy Policy</a> -
+			   <a href="contact.html">Contact Us</a></p>
+		   </footer>
+    </footer>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    {% block scripts %}
+    {% endblock %}
+
+</body>
+</html>

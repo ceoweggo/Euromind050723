@@ -1,7 +1,3 @@
-## 432mongohavata
+# Euromind050723
 
-- Blago. FRONT-END
-- Yosif. BACK-END
-- Ivan. DATABASE 
-
-travelling
+## WEBSITE BASE STRUCTURE 
