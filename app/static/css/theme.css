@@ -1,3 +1,18 @@
+
+
+ .cat_image{
+    max-width: 100%;
+    height: autos;
+    object-position: center;
+ }
+
+
 .my-background-color {
-    background-color: aquamarine;
+    background-color: rgb(255, 204, 127);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
 }
+.butt{
+     background-color: red;
+}
+
